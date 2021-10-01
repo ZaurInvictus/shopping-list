@@ -3,7 +3,7 @@ const helmet = require('helmet') // adding Helmet to enhance API's security
 const cors = require('cors') // enabling CORS for all requests
 
 // IMPORT ROUTES
-//const posts = require('../routes/post-routes')
+const items = require('../routes/item-routes')
 
 
 const server = express()
@@ -14,7 +14,7 @@ server.use(cors())
 
 
 // ROUTES
-// server.use('/api/posts', posts)
+server.use('/api/items', items)
 
 
 
