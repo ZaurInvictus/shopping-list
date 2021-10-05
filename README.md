@@ -7,7 +7,7 @@ Shopping list api
 
 - [Express](https://www.npmjs.com/package/express): Fast, unopinionated, minimalist web framework for Node.js
 - [Knex](https://www.npmjs.com/package/knex): Knex.js is a "batteries included" SQL query builder for Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift designed to be flexible, portable, and fun to use
-- [Sqlite3](https://www.npmjs.com/package/postgres): PostgreSQL is a free and open-source relational database management system emphasizing extensibility and SQL compliance
+- [Postgres](https://www.npmjs.com/package/postgres): PostgreSQL is a free and open-source relational database management system emphasizing extensibility and SQL compliance
 - [Cors](https://www.npmjs.com/package/cors): CORS is a Node.js package for providing a Connect/Express middleware that can be used to enable CORS
 - [Helmet](https://www.npmjs.com/package/helmet): Helmet helps you secure your Express apps by setting various HTTP headers
 - [Dotenv](https://www.npmjs.com/package/dotenv): Dotenv is a zero-dependency module that loads environment variables from a .env file
