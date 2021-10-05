@@ -30,6 +30,7 @@ http://localhost:5000/api/items/
 # GET BY ITEM ID
 http://localhost:5000/api/items/:id
 
+```json
 {
     "id": 1,
     "name": "Tomatoes",
@@ -37,32 +38,34 @@ http://localhost:5000/api/items/:id
     "count": "3",
     "isPurchased": false,
     "created_at": "2021-10-05T18:10:03.809Z"
-  },
+  }
+ ```
 
 # POST ITEM
 http://localhost:5000/api/items
 
+```json
 {
    "name":"Tomatoes",
    "description": "Lorem ipsum",
    "count": "1"
 }
-
+```
 
 # UPDATE ITEM
 http://localhost:5000/api/items/:id
 
+```json
 {
    "name": "Tomatoes",
     "description": "Lorem ipsum",
     "count": "3",
     "isPurchased": false,
 }
-
+```
 
 # DELETE ITEM
 http://localhost:5000/api/items/:id
-
 
 
 # Run tests
