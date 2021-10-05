@@ -6,6 +6,7 @@ exports.up = function(knex) {
         tbl.string('name', 10000).notNullable()
         tbl.string('description', 10000).notNullable()
         tbl.string('count', 10000).notNullable()
+        tbl.boolean('isPurchased').defaultTo(false)
         tbl.timestamp('created_at').defaultTo(knex.fn.now())
     })
         

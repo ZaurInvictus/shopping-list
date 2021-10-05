@@ -8,12 +8,12 @@ exports.seed = function (knex) {
         {
           name: "Tomatoes",
           description: 'Green cherry tomatoes',
-          count: '1'
+          count: '1',
         },
         {
           name: "Tomatoes 2",
           description: 'Green cherry tomatoes 2',
-          count: '2'
+          count: '2',
         },
       ]);
     });

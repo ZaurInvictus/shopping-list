@@ -59,7 +59,6 @@ router.get("/:id", async (req, res) => {
 router.put("/:id", async (req, res) => {
   const { id } = req.params;
   const newItemData = req.body;
-  const name = req.body.name
   try {
     const item = await Items.updateById(id, newItemData);
     if (!item) {
@@ -71,6 +70,11 @@ router.put("/:id", async (req, res) => {
     // RETURNS UPDATED ITEM
     const updatedItem = await Items.findById(id);
     res.status(200).json(updatedItem);
+
+    // RETURNS ALL ITEMS
+    // const allItems = await Items.find()
+    // res.status(200).json(allItems);
+
   } catch (error) {
     res.status(500).json({
       errors: [{ msg: "Error updating data." }],
