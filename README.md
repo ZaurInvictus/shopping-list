@@ -6,6 +6,7 @@ Shopping list api
 # GET ALL ITEMS
 http://localhost:5000/api/items/
 
+```json
 [
   {
     "id": 1,
@@ -24,6 +25,7 @@ http://localhost:5000/api/items/
     "created_at": "2021-10-05T18:11:03.809Z"
   },
 ]
+```
 
 # GET BY ITEM ID
 http://localhost:5000/api/items/:id
