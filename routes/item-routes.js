@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const { check, validationResult } = require("express-validator");
 const Items = require("../models/item-models");
 
 // GET ALL
@@ -11,8 +12,19 @@ router.get("/", (req, res) => {
 });
 
 // POST
-router.post("/", async (req, res) => {
+router.post("/", 
+[
+  check("name", "Name is required").exists().not().isEmpty(),
+  check("description", "Description is required").exists().not().isEmpty(),
+  check("count", "Count is required").exists().not().isEmpty()
+],
+async (req, res) => {
   // const item = req.body
+  const errors = validationResult(req)
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() })
+  }
+
   const { name, description, count } = req.body;
 
   try {
